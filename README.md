@@ -1,1 +1,1 @@
-README
+DevOps를 위한 IaC 클라우드 인프라 자동화 전문가 과정
