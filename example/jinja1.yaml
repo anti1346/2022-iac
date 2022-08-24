@@ -1,0 +1,18 @@
+---
+- hosts: node1
+  vars:
+    location: Seoul
+  tasks:
+  - name: copying files from remote server
+    copy:
+      src: hello.txt
+      dest: /tmp/hello-copy.txt
+  - name: template from remote server
+    template:
+      src: hello.txt
+      dest: /tmp/hello-template.txt
+    register: template_output
+  - name: debug report
+    debug:
+      var: template_output
+  
