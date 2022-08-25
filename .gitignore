@@ -1,2 +1,4 @@
 .git
 example/cccr-iac-2022
+example/kubespray
+example/ansible-examples
